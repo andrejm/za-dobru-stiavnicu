@@ -1,0 +1,32 @@
+.groupbox {
+	&--expanded {
+
+	}
+
+	&__content {
+		overflow: hidden;
+		
+		&--hidden {
+			max-height: 0;
+			transition: max-height 1s ease-in-out;
+
+			.groupbox--expanded & {
+				max-height: 9999px;
+				transition: max-height 1s ease-in-out;
+			}
+		}
+	}
+
+	&__expand {
+		.groupbox--expanded & {
+			display: none;
+		}
+	}
+
+	&__shrink {
+		display: none;
+		.groupbox--expanded & {
+			display: inline;
+		}
+	}
+}

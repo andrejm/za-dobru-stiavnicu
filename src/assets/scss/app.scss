@@ -64,4 +64,5 @@
 @include motion-ui-animations;
 
 //components
-@include components/region-map;
+@import 'components/region-map';
+@import 'components/groupbox';

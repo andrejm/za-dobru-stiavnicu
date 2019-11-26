@@ -1,3 +1,16 @@
 .region-map {
 	background: transparent url( '../img/Slepa mapa.svg') no-repeat;
+	background-size: contain;
+	background-position: right center;
+	min-height: rem-calc(600);
+
+	&__introtext {
+
+	}
+
+	@include breakpoint( large ) {
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+	}
 }
